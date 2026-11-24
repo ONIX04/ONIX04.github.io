@@ -49,3 +49,14 @@ footer { text-align:center; color:var(--muted); padding:40px 0; border-top:1px s
 .term { margin:0; background:#1e2026; border:1px solid var(--line); border-radius:8px; padding:14px 16px; font:12.5px/1.55 Consolas, "DejaVu Sans Mono", monospace; color:#d8dbe2; overflow:auto; max-height:330px; white-space:pre; }
 .term .ok { color:#4ade80; } .term .xf { color:#facc15; } .term .cmd { color:#7cb7ff; }
 .project > * { min-width:0; }
+
+.appshot { border:1px solid var(--line); border-radius:8px; overflow:hidden; background:#fff; color:#222; font:13px Arial, sans-serif; }
+.appshot .bar { background:#e9ebef; padding:6px 10px; display:flex; gap:5px; align-items:center; }
+.appshot .bar i { width:9px; height:9px; border-radius:50%; background:#c4c7cd; display:inline-block; }
+.appshot .bar span { margin-left:8px; color:#666; font-size:11px; }
+.appshot .app { padding:10px 12px 12px; }
+.appshot .app b { display:block; font-size:16px; }
+.appshot .app small { color:#555; }
+.appshot table { width:100%; border-collapse:collapse; margin-top:6px; }
+.appshot th, .appshot td { border:1px solid #ccc; padding:3px 5px; text-align:left; }
+.appshot th { background:#f0f0f0; }
