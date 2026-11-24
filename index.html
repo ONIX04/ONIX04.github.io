@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ярослав Синюк — Junior QA Engineer | Портфоліо</title>
+  <meta name="description" content="Портфоліо Ярослава Синюка, Junior QA Engineer з Луцька: тест-кейси, баг-репорти, автотести на Python/pytest, SQL і веб-застосунки на Flask.">
+  <meta name="keywords" content="QA Engineer, тестувальник, Junior QA, manual testing, pytest, SQL, Луцьк, портфоліо">
+  <meta name="author" content="Ярослав Синюк">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://onix04.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ярослав Синюк — Junior QA Engineer">
+  <meta property="og:description" content="Тест-кейси, баг-репорти, автотести на pytest і SQL-практика.">
+  <meta property="og:url" content="https://onix04.github.io/">
+  <meta property="og:image" content="https://onix04.github.io/img/library.png">
+  <meta property="og:locale" content="uk_UA">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✔</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top">ЯС<span>.qa</span></a>
+    <button class="burger" aria-label="Відкрити меню" aria-expanded="false">☰</button>
+    <nav class="menu">
+      <a href="#about">Про мене</a>
+      <a href="#skills">Навички</a>
+      <a href="#projects">Проєкти</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="tag">Junior QA Engineer · Луцьк, Україна</p>
+      <h1>Ярослав Синюк</h1>
+      <p class="lead">Знаходжу баги до того, як їх знайдуть користувачі. Пишу тест-кейси й баг-репорти, перевіряю дані в SQL і автоматизую рутинні перевірки на Python + pytest.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">Дивитися проєкти</a>
+        <a class="btn ghost" href="https://github.com/ONIX04" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <ul class="stats">
+        <li><b>26</b> автотестів</li>
+        <li><b>16</b> тест-кейсів</li>
+        <li><b>5</b> баг-репортів</li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>Про мене</h2>
+      <p>Студент 4 курсу спеціальності «Комп'ютерна інженерія» у Волинському фаховому коледжі НУХТ. Маю технічну базу, яка допомагає в тестуванні: бази даних (MySQL, SQLite), мережі, системне адміністрування, схемотехніка. У навчальних проєктах пройшов шлях від написання застосунку до його повного тестування й опису дефектів.</p>
+      <p>Шукаю першу позицію Junior / Trainee QA Engineer: веб або мобільні застосунки, ремоут чи гібрид.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Навички</h2>
+      <div class="grid skills">
+        <div class="card"><h3>Тестування</h3><p>Теорія тестування, SDLC/STLC, тест-дизайн (класи еквівалентності, граничні значення), тест-кейси, чек-листи, баг-репорти, регресія</p></div>
+        <div class="card"><h3>Інструменти</h3><p>Chrome DevTools, Postman, Jira, TestRail, Git / GitHub</p></div>
+        <div class="card"><h3>Автоматизація</h3><p>Python, pytest (фікстури, параметризація, xfail), Flask test client</p></div>
+        <div class="card"><h3>Бази даних</h3><p>SQL: SELECT, JOIN, GROUP BY, представлення, процедури, тригери; MySQL, SQLite, phpMyAdmin</p></div>
+        <div class="card"><h3>Технічна база</h3><p>HTTP, REST, клієнт-серверна архітектура, HTML/CSS, мережі, Linux CLI</p></div>
+        <div class="card"><h3>Мови</h3><p>Українська — рідна; англійська — B1 (технічна документація)</p></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Проєкти</h2>
+      <article class="project">
+        <pre class="term" aria-label="Результат запуску pytest"><span class="cmd">$ pytest -q</span>
+<span class="ok">PASSED</span> test_table_created_empty
+<span class="ok">PASSED</span> test_insert_returns_id_and_saves_all_fields
+<span class="ok">PASSED</span> test_ids_autoincrement
+<span class="ok">PASSED</span> test_get_all_ordered_by_id
+<span class="ok">PASSED</span> test_get_missing_id_returns_none
+<span class="ok">PASSED</span> test_update_changes_only_target_row
+<span class="ok">PASSED</span> test_delete_removes_row
+<span class="ok">PASSED</span> test_sql_injection_is_stored_as_text
+<span class="ok">PASSED</span> test_not_null_fields_reject_none[title]
+<span class="ok">PASSED</span> test_not_null_fields_reject_none[author]
+<span class="ok">PASSED</span> test_index_empty
+<span class="ok">PASSED</span> test_add_form_opens
+<span class="ok">PASSED</span> test_create_via_form_redirects_and_shows_row
+<span class="ok">PASSED</span> test_edit_form_prefilled
+<span class="ok">PASSED</span> test_update_via_form
+<span class="ok">PASSED</span> test_edit_missing_returns_404
+<span class="ok">PASSED</span> test_delete_via_post
+<span class="ok">PASSED</span> test_delete_by_get_not_allowed
+<span class="ok">PASSED</span> test_html_is_escaped
+<span class="ok">PASSED</span> test_non_numeric_year_saved_as_empty
+<span class="xf">XFAIL </span> test_bug001_title_of_spaces_rejected
+<span class="xf">XFAIL </span> test_bug002_year_in_future_rejected
+<span class="xf">XFAIL </span> test_bug003_zero_pages_rejected
+<span class="xf">XFAIL </span> test_bug004_unknown_status_rejected
+<span class="ok">PASSED</span> test_missing_title_field_returns_400
+<span class="xf">XFAIL </span> test_bug005_viewport_meta_present
+<span class="ok">21 passed</span>, <span class="xf">5 xfailed</span> in 0.15s</pre>
+        <div>
+          <h3>QA-SQLite-CRUD-Tests</h3>
+          <p>Повне тестування веб-застосунку «Домашня бібліотека»: 16 ручних тест-кейсів, чек-лист регресії, 5 баг-репортів і 26 автотестів на pytest (шар даних, маршрути Flask, валідація, безпека: SQL-ін'єкції та XSS). Відомі дефекти зафіксовані тестами xfail(strict), тож виправлення одразу буде видно в прогоні.</p>
+          <p class="stack">Python · pytest · Flask test client · Markdown</p>
+          <a href="https://github.com/ONIX04/QA-SQLite-CRUD-Tests" target="_blank" rel="noopener">Репозиторій →</a>
+        </div>
+      </article>
+      <article class="project">
+        <img src="img/library.png" alt="Головна сторінка застосунку Домашня бібліотека з таблицею книг" loading="lazy">
+        <div>
+          <h3>SQLite-CRUD-Syniuk</h3>
+          <p>Веб-застосунок обліку книг з повним набором CRUD-операцій. Логіка БД винесена в окремий модуль, усі запити параметризовані. Саме на ньому я відпрацював тестування від вимог до баг-репортів.</p>
+          <p class="stack">Python · Flask · SQLite · HTML/CSS</p>
+          <a href="https://github.com/ONIX04/SQLite-CRUD-Syniuk" target="_blank" rel="noopener">Репозиторій →</a>
+        </div>
+      </article>
+      <article class="project">
+        <pre class="term" aria-label="Фрагмент SQL-скрипту"><span class="cmd">-- 03_views_procedures_triggers.sql</span>
+CREATE TRIGGER trg_price_update
+AFTER UPDATE ON Track
+FOR EACH ROW
+BEGIN
+    IF OLD.UnitPrice &lt;&gt; NEW.UnitPrice THEN
+        INSERT INTO TrackPrice_Audit (track_id, old_price, new_price, change_date, change_user)
+        VALUES (OLD.TrackId, OLD.UnitPrice, NEW.UnitPrice, NOW(), USER());
+    END IF;
+END $$
+DELIMITER ;
+
+-- Перевірка: 3034 треки типу 1 -&gt; 3034 записи в логу
+CALL sp_update_track_price(1, 0.02);</pre>
+        <div>
+          <h3>Chinook-SQL-Practice</h3>
+          <p>SQL-практика на базі Chinook: зовнішні ключі, JOIN по 2–4 таблицях, агрегати, користувачі та права, EXPLAIN, представлення, збережена процедура й тригер аудиту, який зафіксував 3034 зміни ціни за один виклик.</p>
+          <p class="stack">MySQL 8 · phpMyAdmin</p>
+          <a href="https://github.com/ONIX04/Chinook-SQL-Practice" target="_blank" rel="noopener">Репозиторій →</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Контакти</h2>
+      <p>Відкритий до пропозицій стажування та позицій Junior QA. Напишіть мені:</p>
+      <form class="contact" id="contactForm">
+        <input name="name" placeholder="Ваше ім'я" required>
+        <textarea name="msg" rows="4" placeholder="Повідомлення" required></textarea>
+        <button class="btn" type="submit">Надіслати на GitHub</button>
+      </form>
+      <p class="hint">Форма відкриває нове обговорення в моєму GitHub-репозиторії з уже заповненим текстом.</p>
+      <ul class="links">
+        <li><a href="https://github.com/ONIX04" target="_blank" rel="noopener">github.com/ONIX04</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Ярослав Синюк</footer>
+  <script src="script.js"></script>
+</body>
+</html>
